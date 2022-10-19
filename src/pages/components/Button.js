@@ -8,7 +8,7 @@ const Button = (props) => {
       {props.title}
       <div className="tertiary_text_color inline" style={{ marginLeft: "8px" }}>
         {props.subtitle}
-        {props.logo && <div className={styles.icon}><Image src={props.image} width="40%"/></div>}
+        {props.logo && <div className={styles.icon}><Image src={props.image} width="40%" alt="icon"/></div>}
       </div>
     </div>
   );

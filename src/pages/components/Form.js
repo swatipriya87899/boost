@@ -30,11 +30,11 @@ const Form = () => {
     setIsSubmit(true);
   };
 
-  useEffect(() => {
-    console.log(formErrors);
-    if (Object.keys(formErrors).length == 0 && isSubmit)
-      console.log(formValues);
-  }, [formErrors]);
+  // useEffect(() => {
+  //   console.log(formErrors);
+  //   if (Object.keys(formErrors).length == 0 && isSubmit)
+  //     console.log(formValues);
+  // }, [formErrors]);
 
   //Form validation
   const validate = (values) => {
