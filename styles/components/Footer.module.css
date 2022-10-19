@@ -1,0 +1,37 @@
+.footerContent{
+    padding: 0px 150px;
+}
+
+.footerContentForMobile{
+    background: #FFC700;
+    margin-top: 100px;
+    display: none;
+    padding: 0px 50px;
+}
+
+.footer_logo{
+    width: 80px;
+    margin: auto;
+    position: relative;
+    top: -30px;
+}
+
+.footerContentForMobile>.logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.footerNavigation{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footerContent{
+        display: none;
+    }
+    .footerContentForMobile{
+        display: block;
+    }
+}

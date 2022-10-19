@@ -1,0 +1,37 @@
+.button {
+  width: 342px;
+  height: 60px;
+  background: #ffc700;
+  box-shadow: 3px -3px 0px #ffffff;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px;
+}
+
+.subtitle {
+  color: #042a2b;
+}
+
+
+.icon{
+  display: inline;
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .button {
+    width: 220px;
+    height: 35px;
+    font-size: 12px;
+    margin: 0px;
+    margin: 20px 0px;
+  }
+}
