@@ -9,7 +9,7 @@ import GiftBox from "./components/GiftBox";
 import Navbar from "./components/Navbar";
 import NavSection from "./components/NavSection";
 import arrow from "./../../public/images/arrow.png";
-import Carousel from "./components/Carousel";
+
 
 const Home = () => {
   //navVisibility
@@ -46,7 +46,6 @@ const Home = () => {
         <GiftBox></GiftBox>
          <AboutSection></AboutSection>
         <BoosterBuddies></BoosterBuddies>
-        {/* <Carousel></Carousel> */}
         <Footer></Footer>
       </div>
       {nav && <NavSection></NavSection>}
