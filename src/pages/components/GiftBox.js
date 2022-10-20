@@ -19,7 +19,7 @@ const GiftBox = () => {
         <div className={styles.gift_box_image}>
           <Image src={gift_box} alt="Gift Box"></Image>
         </div>
-        <div className="text">
+        <div className="content">
           *We will send a Surprise gift box to our Booosted Buddies i.e. for
           whom we manage all their social media and help them get paid through
           Brand Endorsement .

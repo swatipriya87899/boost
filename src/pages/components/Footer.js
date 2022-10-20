@@ -152,7 +152,7 @@ const Footer = () => {
           </div>
           <div
             className="tertiary_text_color flex"
-            style={{ justifyContent: "space-between" }}
+            style={{ justifyContent: "space-between", paddingBottom:'50px'}}
           >
             <div>Contact Us</div>
             <div>Disclaimer</div>

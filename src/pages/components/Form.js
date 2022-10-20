@@ -57,7 +57,7 @@ const Form = () => {
     >
       <div style={{width:'230px', height:"230px", margin:'auto'}}><Image src={filming} alt="filming"></Image></div>
       <div className="heading">
-        <div className="secondary_text_color inline">Let's</div> Connect!
+        <div className="secondary_text_color inline">Let&#39;s</div> Connect!
       </div>
       <div className="light_font400">
         Submit the form below, tell us a bit more about yourself, and we’ll be
@@ -123,7 +123,7 @@ const Form = () => {
           placeholder="Describe what you are looking to achieve."
         ></textarea>
         <button
-          type="submit" className="submit_button">
+          type="submit" className="submit_button cursor">
           Send
         </button>
       </form>

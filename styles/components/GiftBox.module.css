@@ -14,8 +14,10 @@
     margin: auto;
 }
 
+
 @media only screen and (max-width: 600px) {
     .gift_box_image{
         width: 120px;
     }
+   
 }
