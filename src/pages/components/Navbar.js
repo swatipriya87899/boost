@@ -10,7 +10,7 @@ const Navbar = () => {
   const data= useSelector((state)=> state.nav);
   const dispatch = useDispatch();
   return (
-    <div className='margin' style={{paddingTop:'15px'}}>
+    <div className='margin' style={{paddingTop:'25px'}}>
         <div className={styles.logo_image}><Image src={boost_logo} alt='logo'></Image></div>
         <div onClick={()=>dispatch(navVisibility(true))}  className={styles.hamburgur}>
         <Hamburgur></Hamburgur>

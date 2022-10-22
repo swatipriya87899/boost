@@ -32,7 +32,7 @@ const Home = () => {
           </div>
           <div className={styles.description}>
             Booost media{" "}
-            <div style={{fontWeight:'100', display:"inline"}}>
+            <div className="font100 inline">
                is an Agency who provides Game Changing ,Growth Focused
               Results and transform your social media presence with high-quality
               content.

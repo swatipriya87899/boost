@@ -41,14 +41,14 @@ const Footer = () => {
             style={{ flexDirection: "column", alignItems: "start" }}
           >
             <div className="flex">
-              <Image src={telegram} alt="logo"></Image>
-              <div className="inline primary_text_color">
+              <Image src={telegram} alt="logo" width="18px" height="18px"></Image>
+              <div className="inline primary_text_color" style={{marginLeft:"8px"}}>
                 Booostmedia@gmail.com
               </div>
             </div>
             <div className="flex">
-              <Image src={call} alt="logo"></Image>
-              <div className="inline">(123) 456-7890</div>
+              <Image src={call} alt="logo" width="18px" height="18px"></Image>
+              <div className="inline" style={{marginLeft:"8px"}}>(123) 456-7890</div>
             </div>
             <div className="flex" style={{ marginTop: "30px" }}>
               Follow us:
@@ -92,21 +92,21 @@ const Footer = () => {
         <div className={styles.footer_logo}>
           <Image src={footer_logo} alt="footer logo"></Image>
         </div>
-        <div style={{ textAlign: "left", marginTop: "15px" }}>
+        <div  className="flex" style={{marginTop: "15px", justifyContent:'start' }}>
           <Image
             src={telegramTertiary}
             alt="logo"
             width="15"
             height="15"
           ></Image>
-          <div className="tertiary_text_color inline">
+          <div className="tertiary_text_color inline" style={{marginLeft:"7px"}}>
             Booostmedia@gmail.com
           </div>
         </div>
 
-        <div style={{ textAlign: "left" }}>
+        <div  className="flex" style={{justifyContent:'start' }}>
           <Image src={callTertiary} alt="logo" width="15" height="15"></Image>
-          <div className="tertiary_text_color inline">(123) 456-7890</div>
+          <div className="tertiary_text_color inline" style={{marginLeft:"7px"}}>(123) 456-7890</div>
         </div>
 
         <div className={styles.logo}>

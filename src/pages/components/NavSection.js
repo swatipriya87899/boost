@@ -18,7 +18,7 @@ const NavSection = () => {
         <div className='cursor'><FontAwesomeIcon
               icon={faXmark}
               width="25px"
-              style={{position:'absolute',right:'50px', top:'15px'}}
+              style={{position:'absolute',right:'50px', top:'25px'}}
               onClick={()=>visibility(navVisibility(false))}
             ></FontAwesomeIcon></div>
     </div>

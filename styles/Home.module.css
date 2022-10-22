@@ -32,6 +32,7 @@ font-size: 60px;
 .button_group{
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: 40px 0px;
 }
 
@@ -50,18 +51,18 @@ font-size: 60px;
 @media only screen and (max-width: 600px) {
   .content{
     margin-top: 0px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .description{
     margin-top: 20px;
   }
   .title{
-    font-size: 23px;
+    font-size: 28px;
   }
 
   .subtitle{
-    font-size: 23px;
+    font-size: 26px;
   }
 
   .button_group{

@@ -9,7 +9,7 @@
 .hamburgur{
   position: absolute;
   right: 50px;
-  top: 20px;
+  top: 32px;
 }
 
 @media only screen and (max-width: 600px) {
