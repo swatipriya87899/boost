@@ -13,7 +13,7 @@ const service = () => {
         </div>
         <div className="secondary_text_color font200 content">
           Are you looking for a cost-effective approach to increase your brand
-          exposure and website traffic among our competitors? If you're looking
+          exposure and website traffic among our competitors? If you&#39;re looking
           for a low-cost, high-quality promotion, our social media marketing is
           for you. We will beat any pricing that you find acceptable.
         </div>
