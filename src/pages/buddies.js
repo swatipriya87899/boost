@@ -65,7 +65,7 @@ const Buddies = () => {
               marginLeft:'5px',
               marginRight:'5px',
               width:'170px',
-              height:'220px'
+              height:'250px'
             }}
             images={details.profile}
             name={details.name}
