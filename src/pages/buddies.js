@@ -7,8 +7,9 @@ import profile from "./../../public/images/profile.png";
 import Footer from "./components/Footer";
 import Button from "./components/Button";
 import arrow from "./../../public/images/arrow.png";
+import NavSection from "./components/NavSection";
 
-const buddies = () => {
+const Buddies = () => {
 
       //navVisibility
   const { nav } = useSelector((state) => state);
@@ -31,7 +32,7 @@ const buddies = () => {
       </div>
       <div className="content font200"  style={{padding:"60px 0px"}}>
         Are you looking for a cost-effective approach to increase your brand
-        exposure and website traffic among our competitors? If you're looking
+        exposure and website traffic among our competitors? If you&#39;re looking
         for a low-cost, high-quality promotion, our social media marketing is
         for you. We will beat any pricing that you find acceptable.
       </div>
@@ -79,9 +80,9 @@ const buddies = () => {
       <Footer form={false}></Footer>
 
       {nav && <NavSection></NavSection>}
-      
+
     </div>
   );
 };
 
-export default buddies;
+export default Buddies;
