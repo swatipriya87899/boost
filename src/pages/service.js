@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../../styles/Service.module.css";
 import Navbar from "./components/Navbar";
 import { useSelector } from "react-redux";
 import Footer from "./components/Footer";
@@ -23,7 +22,7 @@ const Service = () => {
   return (
     <div className="tertiary_background_color">
       <Navbar></Navbar>
-      <div className={styles.description}>
+      <div style={{paddingBottom:'100px'}}>
         <div className="heading center primary_text_color">
           Services <div className="secondary_text_color inline">we provide</div>
         </div>
