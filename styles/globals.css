@@ -184,9 +184,9 @@ margin: auto;
     font-size: 24px;
   }
   .content{
-    width: 90vw;
     margin: auto;
     font-size: 16px;
+    font-weight: 300;
 }
 
   .submit_button{

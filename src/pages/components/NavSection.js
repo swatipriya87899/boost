@@ -4,6 +4,7 @@ import { navVisibility } from '../../redux/action';
 import styles from '../../../styles/components/NavSection.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import Link from 'next/link';
 
 const NavSection = () => {
 
@@ -12,7 +13,7 @@ const NavSection = () => {
     <div className={styles.navSection}>
         <ul>
             <li className='cursor'>Home</li>
-            <li className='cursor'>Our Services</li>
+            <Link href="/service"><li className='cursor' onClick={()=>visibility(navVisibility(false))}>Our Services</li></Link>
             <li className='cursor'>Our Boooster Buddies</li>
         </ul>
         <div className='cursor'><FontAwesomeIcon
