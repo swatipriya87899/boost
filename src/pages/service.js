@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import { useSelector } from "react-redux";
-import styles from "./../../styles/Service.module.css";
+import styles from "../../styles/Service.module.css";
 import Footer from "./components/Footer";
 import Marketing from "./components/Marketing";
 import Branding from "./components/Branding";
