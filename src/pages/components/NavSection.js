@@ -12,7 +12,7 @@ const NavSection = () => {
   return (
     <div className={styles.navSection}>
         <ul>
-            <li className='cursor'>Home</li>
+            <Link href="/"><li onClick={()=>visibility(navVisibility(false))} className='cursor'>Home</li></Link>
             <Link href="/service"><li className='cursor' onClick={()=>visibility(navVisibility(false))}>Our Services</li></Link>
             <li className='cursor'>Our Boooster Buddies</li>
         </ul>
