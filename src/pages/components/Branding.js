@@ -32,14 +32,14 @@ const Branding = () => {
         <div>
         {
             task1.map((item)=>
-                <li>{item}</li>
+                <li key={item}>{item}</li>
             )
         }
         </div>
         <div>
         {
             task2.map((item)=>
-                <li>{item}</li>
+                <li key={item}>{item}</li>
             )
         }
         </div>

@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import { useSelector } from "react-redux";
 import styles from "./../../styles/service.module.css";
 import Footer from "./../../src/pages/components/Footer";
 import Marketing from "./components/Marketing";
 import Branding from "./components/Branding";
-import { useSelector } from "react-redux";
 import NavSection from "./components/NavSection";
 
 import marketing1 from "./../../public/images/marketing1.png";
@@ -16,6 +16,7 @@ import media2 from "./../../public/images/media2.png";
 import media3 from "./../../public/images/media3.png";
 
 const service = () => {
+
   //navVisibility
   const { nav } = useSelector((state) => state);
 
