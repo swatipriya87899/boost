@@ -37,8 +37,8 @@ const Buddies = () => {
         for you. We will beat any pricing that you find acceptable.
       </div>
 
-      {/* Booster Buddies Details */}
-      <div className="flex" style={{ margin: "0px 70px" }}>
+      {/* Booster Buddies Details  Largest Devices*/}
+      <div className={styles.buddies_section_large}>
         {details.map((details) => (
           <div key={details.name}><Card
             card_style={{
@@ -54,6 +54,27 @@ const Buddies = () => {
         ))}
       </div>
 
+       {/* Booster Buddies Details  Small Devices*/}
+       <div className={styles.buddies_section_small}>
+        {details.map((details) => (
+          <div key={details.name}><Card
+            card_style={{
+              boxShadow: "4px -4px 0px #FFC700",
+              color: "#042A2B",
+              textAlign: "center",
+              marginLeft:'5px',
+              marginRight:'5px',
+              width:'170px',
+              height:'220px'
+            }}
+            images={details.profile}
+            name={details.name}
+          /></div>
+        ))}
+      </div>
+
+
+   
 
       <div className={styles.footer_contents}>
         <div className={styles.footer_title}>We are excited to work with you</div>

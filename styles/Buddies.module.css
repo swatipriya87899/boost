@@ -1,3 +1,15 @@
+.buddies_section_large{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 70px;
+}
+
+.buddies_section_small{
+    display: none;
+}
+
 .footer_contents{
     margin: auto;
     width: 60vw;
@@ -24,5 +36,14 @@
     }
     .footer_subtitle{
         font-size: 26px;
+    }
+    .buddies_section_large{
+        display: none;
+    }
+    .buddies_section_small{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 }
