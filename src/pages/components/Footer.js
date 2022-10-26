@@ -19,13 +19,13 @@ import youtubeTertiary from "./../../../public/images/youtubeTertiary.png";
 import linkedInTertiary from "./../../../public/images/linkedInTertiary.png";
 import twitterTertiary from "./../../../public/images/twitterTertiary.png";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div
       className="tertiary_background_color font300 primary_text_color"
       style={{paddingTop:'50px', fontSize: "13px" }}
     >
-      <Form></Form>
+      {props.form && <Form/>}
 
       {/* Footer for larger devices */}
       <div className={styles.footerContent}>
