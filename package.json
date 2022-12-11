@@ -20,6 +20,7 @@
     "react-owl-carousel": "^2.3.3",
     "react-redux": "^8.0.4",
     "react-responsive-carousel": "^3.2.23",
+    "react-scroll": "^1.8.8",
     "redux": "^4.2.0",
     "sharp": "^0.31.2",
     "typewriter-effect": "^2.19.0"

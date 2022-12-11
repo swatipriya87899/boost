@@ -27,14 +27,14 @@ const NavSection = () => {
             Our Services
           </li>
         </Link>
-        <Link href="/buddies">
+        {/* <Link href="/buddies">
           <li
             className="cursor"
             onClick={() => visibility(navVisibility(false))}
           >
             Our Boooster Buddies
           </li>
-        </Link>
+        </Link> */}
       </ul>
       <div className="cursor">
         <FontAwesomeIcon

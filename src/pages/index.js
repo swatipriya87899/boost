@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import NavSection from "./components/NavSection";
 import arrow from "./../../public/images/arrow.png";
 import Typewriter from "typewriter-effect";
+import { Link } from "react-scroll/modules";
 
 const Home = () => {
   //navVisibility
@@ -24,16 +25,13 @@ const Home = () => {
           <div className={styles.content}>
             <div className={styles.title}>More Than Just</div>
             <div className={styles.subtitle}>
-            <Typewriter
-              options={{
-                strings: [
-                  "Creator Manage Agency",
-                  "Brand Boosting Agency",
-                ],
-                autoStart: true,
-                loop: true, 
-              }}
-            />
+              <Typewriter
+                options={{
+                  strings: ["Creator Manage Agency", "Brand Boosting Agency"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
             </div>
             <div className={styles.description}>
               Booost media{" "}
@@ -43,20 +41,11 @@ const Home = () => {
                 content.
               </div>
             </div>
+            <Link to="form" spy="true" smooth="true" offset={50} duration={500}>
             <div className={styles.button_group}>
-              <Button
-                title="I am a"
-                subtitle=" brand"
-                image={arrow}
-                logo="true"
-              ></Button>
-              <Button
-                title="I am a"
-                subtitle=" Creator"
-                image={arrow}
-                logo="true"
-              ></Button>
+              <Button title="Say" subtitle=" Hello" image={arrow}></Button>
             </div>
+            </Link>
           </div>
         </div>
         <GiftBox></GiftBox>

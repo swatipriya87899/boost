@@ -25,7 +25,7 @@ const GiftBox = () => {
           Brand Endorsement .
         </div>
         <div className={styles.button}>
-          <Button
+          {/* <Button
             title="Join Us"
             button_style={{
               background: "#FFFFFF",
@@ -33,7 +33,7 @@ const GiftBox = () => {
               boxShadow: "3px -3px 0px #042A2B",
               margin: "auto",
             }}
-          ></Button>
+          ></Button> */}
         </div>
       </div>
     </div>

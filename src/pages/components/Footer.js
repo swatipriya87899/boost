@@ -23,9 +23,9 @@ const Footer = (props) => {
   return (
     <div
       className="tertiary_background_color font300 primary_text_color"
-      style={{paddingTop:'50px', fontSize: "13px" }}
+      style={{ paddingTop: "50px", fontSize: "13px" }}
     >
-      {props.form && <Form/>}
+      {props.form && <div id="form"><Form /></div>}
 
       {/* Footer for larger devices */}
       <div className={styles.footerContent}>
@@ -41,32 +41,48 @@ const Footer = (props) => {
             style={{ flexDirection: "column", alignItems: "start" }}
           >
             <div className="flex">
-              <Image src={telegram} alt="logo" width="18px" height="18px"></Image>
-              <div className="inline primary_text_color" style={{marginLeft:"8px"}}>
-                Booostmedia@gmail.com
+              <Image
+                src={telegram}
+                alt="logo"
+                width="18px"
+                height="18px"
+              ></Image>
+              <div
+                className="inline primary_text_color"
+                style={{ marginLeft: "8px" }}
+              >
+                prachi@booost.in
               </div>
             </div>
             <div className="flex">
               <Image src={call} alt="logo" width="18px" height="18px"></Image>
-              <div className="inline" style={{marginLeft:"8px"}}>(123) 456-7890</div>
+              <div className="inline" style={{ marginLeft: "8px" }}>
+                8920575088
+              </div>
             </div>
             <div className="flex" style={{ marginTop: "30px" }}>
               Follow us:
               <div style={{ width: "20px", height: "20px", margin: "10px" }}>
-                <Image src={instagram} alt="logo" />
+                <a href="https://instagram.com/booost.media?igshid=YmMyMTA2M2Y=">
+                  <Image src={instagram} alt="logo" />
+                </a>
               </div>
               <div style={{ width: "20px", height: "20px", margin: "10px" }}>
-                <Image src={facebook} alt="logo" />
+                <a href="https://www.facebook.com/booost.media">
+                  <Image src={facebook} alt="logo" />
+                </a>
               </div>
-              <div style={{ width: "20px", height: "20px", margin: "10px" }}>
+              {/* <div style={{ width: "20px", height: "20px", margin: "10px" }}>
                 <Image src={youtube} alt="logo" />
-              </div>
+              </div> */}
               <div style={{ width: "20px", height: "20px", margin: "10px" }}>
-                <Image src={linkedIn} alt="logo" />
+                <a href="https://www.linkedin.com/company/booost-media/">
+                  <Image src={linkedIn} alt="logo" />
+                </a>
               </div>
-              <div style={{ width: "20px", height: "20px", margin: "10px" }}>
+              {/* <div style={{ width: "20px", height: "20px", margin: "10px" }}>
                 <Image src={twitter} alt="logo" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -83,7 +99,6 @@ const Footer = (props) => {
             <div style={{ marginLeft: "20px" }}>PRIVACY POLICY</div> */}
             <div style={{ marginLeft: "20px" }}>PRIVACY POLICY</div>
           </div>
-          <div>Copyright © 2018 • Lift Media Inc.</div>
         </div>
       </div>
 
@@ -92,66 +107,83 @@ const Footer = (props) => {
         <div className={styles.footer_logo}>
           <Image src={footer_logo} alt="footer logo"></Image>
         </div>
-        <div  className="flex" style={{marginTop: "15px", justifyContent:'start' }}>
-          <Image
+        <div
+          className="flex"
+          style={{ marginTop: "15px", justifyContent: "start" }}
+        >
+          {/* <Image
             src={telegramTertiary}
             alt="logo"
             width="15"
             height="15"
-          ></Image>
-          <div className="tertiary_text_color inline" style={{marginLeft:"7px"}}>
-            Booostmedia@gmail.com
+          ></Image> */}
+          <div
+            className="tertiary_text_color inline"
+            style={{ marginLeft: "7px" }}
+          >
+            prachi@booost.in
           </div>
         </div>
 
-        <div  className="flex" style={{justifyContent:'start' }}>
+        <div className="flex" style={{ justifyContent: "start" }}>
           <Image src={callTertiary} alt="logo" width="15" height="15"></Image>
-          <div className="tertiary_text_color inline" style={{marginLeft:"7px"}}>(123) 456-7890</div>
+          <div
+            className="tertiary_text_color inline"
+            style={{ marginLeft: "7px" }}
+          >
+            8920575088
+          </div>
         </div>
 
         <div className={styles.logo}>
-          <Image
-            src={instagramTertiary}
-            alt="logo"
-            width="20"
-            height="20"
-          ></Image>
-          <Image
-            src={facebookTertiary}
-            alt="logo"
-            width="20"
-            height="20"
-          ></Image>
-          <Image
+          <a href="https://instagram.com/booost.media?igshid=YmMyMTA2M2Y=">
+            <Image
+              src={instagramTertiary}
+              alt="logo"
+              width="20"
+              height="20"
+            ></Image>
+          </a>
+          <a href="https://www.facebook.com/booost.media">
+            <Image
+              src={facebookTertiary}
+              alt="logo"
+              width="20"
+              height="20"
+            ></Image>
+          </a>
+          {/* <Image
             src={youtubeTertiary}
             alt="logo"
             width="20"
             height="20"
-          ></Image>
-          <Image
-            src={linkedInTertiary}
-            alt="logo"
-            width="20"
-            height="20"
-          ></Image>
-          <Image
+          ></Image> */}
+          <a href="https://www.linkedin.com/company/booost-media/">
+            <Image
+              src={linkedInTertiary}
+              alt="logo"
+              width="20"
+              height="20"
+            ></Image>
+          </a>
+          {/* <Image
             src={twitterTertiary}
             alt="logo"
             width="20"
             height="20"
-          ></Image>
+          ></Image> */}
         </div>
 
         <div className={styles.footerNavigation}>
           <div
             className="tertiary_text_color flex"
-            style={{justifyContent: "space-between"}}
+            style={{ justifyContent: "space-between" }}
           >
             <div>Privacy Policy</div>
           </div>
           <div
             className="tertiary_text_color flex"
-            style={{ justifyContent: "space-between", paddingBottom:'50px'}}
+            style={{ justifyContent: "space-between", paddingBottom: "50px" }}
           >
             {/* <div>Contact Us</div>
             <div>Disclaimer</div> */}

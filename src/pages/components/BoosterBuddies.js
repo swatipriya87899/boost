@@ -11,7 +11,13 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import dynamic from "next/dynamic";
 
 import Card from './Card'
-import profile from './../../../public/images/profile.png'
+import ayushman from './../../../public/images/ayushman.jpeg'
+import pragati from './../../../public/images/pragati.jpeg'
+import ruhee from './../../../public/images/ruhee.jpg'
+import shruti from './../../../public/images/shruti.jpeg'
+import rajveer from './../../../public/images/rajveer.jpeg'
+import manjeet from './../../../public/images/manjeet.jpeg'
+import vasundra from './../../../public/images/vasundra.jpeg'
 import Button from './Button'
 
 //Importing the owl carousel component
@@ -47,7 +53,7 @@ responsive: {
   items: 3,
   },
   1000: {
-  items: 4,
+  items: 4.5,
   },
   1200:{
     items:4.8
@@ -60,14 +66,18 @@ responsive: {
         <div className='heading'>Our Booster <div className='secondary_text_color inline'> Buddies</div></div>
     
         <OwlCarousel className='owl-theme' {...options} style={{width:'80vw', margin:'auto'}}>
-        <Card images={profile} name="Tripti Verma"></Card>
-        <Card images={profile} name="Swati Verma"></Card>
-        <Card images={profile} name="Tripti Verma"></Card>
-        <Card images={profile} name="Nidhi Verma"></Card>
-        <Card images={profile} name="Tripti Verma"></Card>
+        <Card images={ayushman}></Card>
+        <Card images={pragati}></Card>
+        <Card images={ruhee}></Card>
+        <Card images={shruti}></Card>
+        <Card images={vasundra}></Card>
+        <Card images={manjeet}></Card>
+        <Card images={rajveer}></Card>
         </OwlCarousel>
+
+        <div className='tertiary_text_color' style={{fontSize:'20px', fontWeight:'bold'}}>Any many more...</div>
        
-        <div className='flex' style={{marginTop:'30px'}}><Button title="Meet All" button_style={{boxShadow: '4px -4px 0px #042A2B'}}></Button></div>
+        {/* <div className='flex' style={{marginTop:'30px'}}><Button title="Meet All" button_style={{boxShadow: '4px -4px 0px #042A2B'}}></Button></div> */}
     </div>
   )
 }
