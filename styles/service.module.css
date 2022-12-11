@@ -1,0 +1,11 @@
+.heading{
+    font-size: 58px;
+    font-weight: bold;
+    margin-top: 15vh;
+}
+@media only screen and (min-width: 1200px) {
+.heading{
+    font-size: 100px;
+    margin-top: 20vh;
+}
+}

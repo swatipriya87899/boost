@@ -9,7 +9,7 @@ import GiftBox from "./components/GiftBox";
 import Navbar from "./components/Navbar";
 import NavSection from "./components/NavSection";
 import arrow from "./../../public/images/arrow.png";
-
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   //navVisibility
@@ -17,36 +17,52 @@ const Home = () => {
   return (
     <>
       <div className="primary_background center">
-        <div className="heroSection"><div className="cursor">
-          <Navbar></Navbar>
-        </div>
-        <div className={styles.content}>
-          <div
-            className={styles.title}
-          >
-            More Than Just
+        <div className="section center">
+          <div className="cursor">
+            <Navbar></Navbar>
           </div>
-          <div className={styles.subtitle}>
-            Creator Manage{" "}
-            <div className="secondary_text_color inline">Agency</div>
-          </div>
-          <div className={styles.description}>
-            Booost media{" "}
-            <div className="font100 inline">
-               is an Agency who provides Game Changing ,Growth Focused
-              Results and transform your social media presence with high-quality
-              content.
+          <div className={styles.content}>
+            <div className={styles.title}>More Than Just</div>
+            <div className={styles.subtitle}>
+            <Typewriter
+              options={{
+                strings: [
+                  "Creator Manage Agency",
+                  "Brand Boosting Agency",
+                ],
+                autoStart: true,
+                loop: true, 
+              }}
+            />
+            </div>
+            <div className={styles.description}>
+              Booost media{" "}
+              <div className="font100 inline">
+                is an Agency who provides Game Changing ,Growth Focused Results
+                and transform your social media presence with high-quality
+                content.
+              </div>
+            </div>
+            <div className={styles.button_group}>
+              <Button
+                title="I am a"
+                subtitle=" brand"
+                image={arrow}
+                logo="true"
+              ></Button>
+              <Button
+                title="I am a"
+                subtitle=" Creator"
+                image={arrow}
+                logo="true"
+              ></Button>
             </div>
           </div>
-          <div className={styles.button_group}>
-            <Button title="I am a" subtitle=" brand" image={arrow} logo="true"></Button>
-            <Button title="I am a" subtitle=" Creator" image={arrow} logo="true"></Button>
-          </div>
-        </div></div>
+        </div>
         <GiftBox></GiftBox>
-         <AboutSection></AboutSection>
+        <AboutSection></AboutSection>
         <BoosterBuddies></BoosterBuddies>
-        <Footer></Footer>
+        <Footer form={true}></Footer>
       </div>
       {nav && <NavSection></NavSection>}
     </>

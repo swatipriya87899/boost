@@ -30,11 +30,7 @@ const Form = () => {
     setIsSubmit(true);
   };
 
-  // useEffect(() => {
-  //   console.log(formErrors);
-  //   if (Object.keys(formErrors).length == 0 && isSubmit)
-  //     console.log(formValues);
-  // }, [formErrors]);
+  
 
   //Form validation
   const validate = (values) => {
@@ -59,12 +55,12 @@ const Form = () => {
       <div className="heading">
         <div className="secondary_text_color inline">Let&#39;s</div> Connect!
       </div>
-      <div className="light_font400">
+      <div className="light_font400"  style={{width:'70%', margin:'auto'}}>
         Submit the form below, tell us a bit more about yourself, and we’ll be
         in touch shortly. Have a Great Day!
       </div>
       <form action="/send-data-here" method="post" onSubmit={handleSubmit}>
-        <div className="flex" style={{ justifyContent: "space-around" }}>
+        <div className="flex" style={{ justifyContent: "center" }}>
           <div>
             <input
               type="text"
@@ -90,7 +86,7 @@ const Form = () => {
             <p>{formErrors.email}</p>
           </div>
         </div>
-        <div className="flex" style={{ justifyContent: "space-around" }}>
+        <div className="flex" style={{ justifyContent: "center" }}>
           <div>
             <input
               type="number"
@@ -105,16 +101,14 @@ const Form = () => {
           </div>
           {/* dropdown */}
           <div>
-          <select className="input">
-          <option value="_" selected disabled>You are</option>
-            <option value="grapefruit">Engineer</option>
-            <option value="lime">Doctor</option>
-            <option selected value="coconut">
-              Writer
-            </option>
+          <select className="input dropdown_selected">
+          <option value="" default selected="true" disabled className="dropdown_selected" hidden style={{color:'red'}}>You are</option>
+            <option value="creator">Creator</option>
+            <option value="brand">Brand</option>
           </select>
           </div>
         </div>
+        <div style={{display:'flex', justifyContent:'center'}}>
         <textarea
           className="input textarea"
           name="description"
@@ -122,6 +116,7 @@ const Form = () => {
           onChange={handleChange}
           placeholder="Describe what you are looking to achieve."
         ></textarea>
+        </div>
         <button
           type="submit" className="submit_button cursor">
           Send

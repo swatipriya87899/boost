@@ -18,7 +18,7 @@ const Branding = () => {
   ]
 
   return (
-    <div className="tertiary_background_color center secondary_text_color" style={{padding:'70px 0px'}}>
+    <div className="tertiary_background_color center secondary_text_color container">
       <div className="heading primary_text_color">Branding...</div>
       <div className="content" style={{fontWeight:'100'}}>
         Today, branding is at an all-time high. We recruit a variety of people

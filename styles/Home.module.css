@@ -2,10 +2,20 @@
   text-align: center;
 }
 
-.heroSection{
-  min-height: 100vh;
-  padding-bottom: 50px;
+/* .hero_section{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+
 
 .primary_text{
   color: #FFFFFF;
@@ -25,13 +35,13 @@
 color: #FFC700;
 font-style: normal;
 font-weight: 800;
-font-size: 60px;
+font-size: 55px;
+
 }
 
 
 .button_group{
   display: flex;
-  justify-content: center;
   text-align: center;
   margin: 40px 0px;
 }
@@ -45,9 +55,6 @@ font-size: 60px;
 }
 
 
-.description{
-  font-weight: 500px;
-}
 @media only screen and (max-width: 600px) {
   .content{
     margin-top: 0px;
@@ -65,7 +72,35 @@ font-size: 60px;
     font-size: 26px;
   }
 
+  .description{
+    font-weight: 500px;
+    margin-top: 3vh;
+  }
+
   .button_group{
     display: block;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .title{
+    font-size: 65px;
+    margin-top: 20vh;
+  }
+  .subtitle{
+    font-size: 80px;
+  }
+  .description{
+    width: 45vw;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 2vh;
+  }
+
+  .button_group{
+    width: 40vw;
+    margin: auto;
+    margin-top: 12vh;
   }
 }

@@ -24,7 +24,7 @@ const GiftBox = () => {
           whom we manage all their social media and help them get paid through
           Brand Endorsement .
         </div>
-        <div style={{ marginTop: "20px" }}>
+        <div className={styles.button}>
           <Button
             title="Join Us"
             button_style={{

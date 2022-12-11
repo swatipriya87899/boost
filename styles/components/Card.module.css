@@ -2,20 +2,21 @@
   background: #ffffff;
   box-shadow: 4px -4px 0px #042a2b;
   border-radius: 8px;
-  width: 220px;
-  height: 330px;
+  width: 180px;
+  height: 265px;
   padding: 7px;
   margin: auto;
   margin-top: 50px;
 }
 
-.images{
-    border-radius: 8px;
+.images {
+  border-radius: 8px;
 }
 
-
 @media only screen and (max-width: 600px) {
-  .card{
+  .card {
     margin-top: 20px;
   }
 }
+
+

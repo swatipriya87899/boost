@@ -28,9 +28,9 @@ margin: 30,
 responsiveClass: true,
 center:true,
 dots: true,
-autoplayTimeout:2000,
+autoplayTimeout:5000,
 autoplay: true,
-smartSpeed:1000,
+smartSpeed:2000,
 loop:true,
 dotEach:true,
 responsive: {
@@ -49,23 +49,25 @@ responsive: {
   1000: {
   items: 4,
   },
+  1200:{
+    items:4.8
+  }
   },
   }
 
   return (
-    <div className='tertiary_text_color' style={{background:"#C4C4C4", padding: '50px 0px'}}>
+    <div className='tertiary_text_color' style={{background:"#C4C4C4", padding: '100px 0px'}}>
         <div className='heading'>Our Booster <div className='secondary_text_color inline'> Buddies</div></div>
     
-        <OwlCarousel className='owl-theme' {...options}>
+        <OwlCarousel className='owl-theme' {...options} style={{width:'80vw', margin:'auto'}}>
         <Card images={profile} name="Tripti Verma"></Card>
         <Card images={profile} name="Swati Verma"></Card>
         <Card images={profile} name="Tripti Verma"></Card>
         <Card images={profile} name="Nidhi Verma"></Card>
         <Card images={profile} name="Tripti Verma"></Card>
-        <Card images={profile} name="Nidhi Verma"></Card>
         </OwlCarousel>
        
-        <div className='flex'><Button title="Meet All" button_style={{boxShadow: '4px -4px 0px #042A2B'}}></Button></div>
+        <div className='flex' style={{marginTop:'30px'}}><Button title="Meet All" button_style={{boxShadow: '4px -4px 0px #042A2B'}}></Button></div>
     </div>
   )
 }

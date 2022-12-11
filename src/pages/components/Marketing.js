@@ -7,7 +7,7 @@ import down_arrow from "./../../../public/images/down_arrow.png";
 const Marketing = (props) => {
   return (
     <div
-      className={styles.container}
+      className="secondary_background_color container center"
       style={props.container_style}
     >
       <div className="heading" style={props.heading1_style}>

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import { useSelector } from "react-redux";
+import styles from "./../../styles/service.module.css"
 import Footer from "./components/Footer";
 import Marketing from "./components/Marketing";
 import Branding from "./components/Branding";
@@ -21,10 +22,15 @@ const Service = () => {
 
   return (
     <div className="tertiary_background_color">
+      <div className="section">
       <Navbar></Navbar>
-      <div style={{paddingBottom:'100px'}}>
-        <div className="heading center primary_text_color">
+      <div>
+
+        {/* heading */}
+        <div className={styles.heading}>
+        <div className="center primary_text_color">
           Services <div className="secondary_text_color inline">we provide</div>
+        </div>
         </div>
         <div
           className="secondary_text_color font200 content"
@@ -36,6 +42,7 @@ const Service = () => {
           marketing is for you. We will beat any pricing that you find
           acceptable.
         </div>
+      </div>
       </div>
 
       {/* Influencer Marketing Section */}
@@ -71,7 +78,7 @@ const Service = () => {
         image_title3="foster lifelong customers"
       ></Marketing>
 
-      <Footer></Footer>
+      <Footer form={true}></Footer>
 
       {nav && <NavSection></NavSection>}
     </div>

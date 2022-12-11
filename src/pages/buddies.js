@@ -30,7 +30,7 @@ const Buddies = () => {
       <div className="heading center">
         Our Booster <div className="primary_text_color inline">Buddies</div>
       </div>
-      <div className="content font200"  style={{padding:"60px 0px"}}>
+      <div className="font200 center"  style={{padding:"60px 0px", width:'70%', margin:'auto'}}>
         Are you looking for a cost-effective approach to increase your brand
         exposure and website traffic among our competitors? If you&#39;re looking
         for a low-cost, high-quality promotion, our social media marketing is

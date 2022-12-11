@@ -77,10 +77,10 @@ const Footer = (props) => {
           style={{ justifyContent: "space-between", marginTop: "20px" }}
         >
           <div className="flex">
-            <div style={{ marginLeft: "20px" }}>ABOUT US</div>
+            {/* <div style={{ marginLeft: "20px" }}>ABOUT US</div>
             <div style={{ marginLeft: "20px" }}>CONTACT US</div>
             <div style={{ marginLeft: "20px" }}>HELP</div>
-            <div style={{ marginLeft: "20px" }}>PRIVACY POLICY</div>
+            <div style={{ marginLeft: "20px" }}>PRIVACY POLICY</div> */}
             <div style={{ marginLeft: "20px" }}>PRIVACY POLICY</div>
           </div>
           <div>Copyright © 2018 • Lift Media Inc.</div>
@@ -147,15 +147,14 @@ const Footer = (props) => {
             className="tertiary_text_color flex"
             style={{justifyContent: "space-between"}}
           >
-            <div>About</div>
             <div>Privacy Policy</div>
           </div>
           <div
             className="tertiary_text_color flex"
             style={{ justifyContent: "space-between", paddingBottom:'50px'}}
           >
-            <div>Contact Us</div>
-            <div>Disclaimer</div>
+            {/* <div>Contact Us</div>
+            <div>Disclaimer</div> */}
           </div>
         </div>
       </div>

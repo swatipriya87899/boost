@@ -21,8 +21,13 @@ a {
 }
 
 .screen_width{
-  /* width: 70vw; */
   margin: auto;
+}
+
+
+.section{
+  padding-bottom: 50px;
+  min-height: 100vh;
 }
 
 .heading{
@@ -57,7 +62,7 @@ a {
   background: #042A2B;
 }
 
-.font{
+.font100{
   font-weight: 100;
 }
 
@@ -94,6 +99,8 @@ a {
   font-weight: 900;
 }
 
+
+
 .flex{
   display: flex;
   justify-content: center;
@@ -102,26 +109,41 @@ a {
 }
 
 .input{
-  background: #FFFFFF;
+background: #FFFFFF;
 border: 1px solid #042A2B;
 box-shadow: 3px -2px 0px #042A2B;
 border-radius: 10px;
-min-width: 230px;
+min-width: 260px;
 height: 40px;
 outline: none;
 margin: 10px;
-padding-left: 10px;
+padding-left: 15px;
 display: flex;
 justify-content: center;
 align-items: center;
+font-size: 14px;
+color: black;
 }
 
-input::placeholder{
-  font-weight: 500;
-font-size: 20px;
-line-height: 30px;
-color: #C4C4C4;
+
+
+.container{
+  padding: 80px 50px;
 }
+
+
+::placeholder { /* Most modern browsers support this now. */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #C4C4C4;
+}
+
+select:invalid {
+  color: #666666;
+  /*Change color of "placeholder" text in select box*/
+}
+
 
 .textarea{
   height: 150px;
@@ -171,8 +193,9 @@ margin: auto;
 }
 
 .content{
-  width: 70vw;
+  width: 62vw;
   margin: auto;
+  text-align: center;
 }
 
 .button_group{
@@ -209,5 +232,30 @@ margin: auto;
   .button_group{
     display: block;
   }
+  .description{
+    width: 10vw;
+    font-weight: 300;
+  }
 }
 
+
+@media only screen and (min-width: 1200px) {
+  .heading{
+    font-size: 55px;
+  }
+
+  .content{
+    width: 45vw;
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .padding{
+    padding: 12vh;
+  }
+    .container{
+        padding: 170px 300px;
+    }
+
+}

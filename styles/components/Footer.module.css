@@ -37,3 +37,9 @@
         display: block;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .footerContent{
+        padding: 0px 440px;
+    }
+}
